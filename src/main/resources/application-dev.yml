@@ -1,0 +1,19 @@
+
+spring:
+  redis:
+    host: 127.0.0.1
+    password: 123456
+    port: 6379
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot_db?charset=utf8mb4&useSSL=false
+    username: root
+    password: Password123456
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
